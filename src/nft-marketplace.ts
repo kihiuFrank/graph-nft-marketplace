@@ -87,6 +87,10 @@ export function handleItemListed(event: ItemListedEvent): void {
     );
   }
 
+  activeItem.buyer = Address.fromString(
+    "0x0000000000000000000000000000000000000000"
+  );
+
   itemListed.seller = event.params.seller;
   activeItem.seller = event.params.seller;
 
